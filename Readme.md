@@ -1,18 +1,20 @@
 
-# ClickOutside
+# ClickOutside (fork from https://github.com/tj/react-click-outside)
 
 React click outside component.
 
 ## Installation
 
 ```
-$ npm install tj/react-click-outside
+$ npm install @react-shared/click-outside
 ```
 
 ## Example
 
 ```js
-<ClickOutside onClickOutside={::this.close}>
+import ClickOutside from '@react-shared/click-outside'
+
+<ClickOutside onClickOutside={this.close}>
   <p>Im a menu or something that you want to hide when clicking outside.</p>
 </ClickOutside>
 ```
